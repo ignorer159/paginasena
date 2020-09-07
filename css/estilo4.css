@@ -1,0 +1,114 @@
+*{
+	border-radius: 8px;
+	font-family: "Open Sans",sans-serif;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+}
+/*Icono de navegacion*/
+#navegacion{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	padding: 20px;
+	transition: 0.5s;
+	border-radius: 40px;
+	overflow: hidden;
+	box-shadow: 0 8px 15px rgba(0,0,0,.2)
+}
+#menu{
+	margin: 0;
+	padding: 0;
+	width: 0;
+	overflow: hidden;
+	display: flex;
+	transition: 0.5s;
+}
+#navegacion input:checked ~ #menu{
+	width: 600px;
+}
+#menu li{
+	list-style: none;
+	margin: 0 10px;
+}
+#menu li a {
+	text-decoration: none;
+	color: #666;
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: 0.5s;
+}
+#menu li a:hover{
+	color: #42a8f9;
+}
+#navegacion input{
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	opacity: 0;
+}
+#navegacion span{
+	position: absolute;
+	left: 26px;
+	width: 32px;
+	height: 4px;
+	background: #666;
+	pointer-events: none;
+	transition: 0.5s;
+}
+#navegacion input:checked ~ span{
+	background: #42a8f9;
+}
+#navegacion span:nth-child(2){
+	transform: translateY(-8px);
+}
+#navegacion input:checked ~ span:nth-child(2){
+	transform: translateY(0) rotate(45deg);
+}
+#navegacion span:nth-child(3){
+	transform: translateY(8px);
+}
+#navegacion input:checked ~ span:nth-child(3){
+	transform: translateY(0) rotate(-45deg);
+}
+/*Contenido en bloques*/
+
+#bloquesizquierda a , #bloquesderecha a{
+	position: absolute;
+	color: white;
+	width: 25%;
+	padding: 54px 95px;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	font-size: 30px;
+	box-shadow: 0 8px 15px rgba(0,0,0,.2)
+}
+#bloque1 {
+	margin: 100px 150px 0;
+	background-color: #0007A2;
+}
+#bloque2 {
+	margin: 300px 150px 0;
+	background-color: #414AFE;
+}
+#bloque3 {
+	margin: 500px 150px 0;
+	background-color: #8388FF;
+}
+#bloque4 {
+	margin: 100px 700px 0;
+	background-color: #B686FF;
+}
+#bloque5 {
+	margin: 300px 700px 0;
+	background-color: #8B40FF;
+}
+#bloque6 {
+	margin: 500px 700px 0px;
+	background-color: #7317FF;
+}

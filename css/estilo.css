@@ -1,0 +1,44 @@
+*{
+	font-family: "Open Sans",sans-serif;
+	border-radius: 8px;
+}
+body{
+	background: url(../img/1.jpg);
+	background-size: 100% 1100px;
+	background-repeat: no-repeat;
+
+}
+#contenido{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	background: white;
+	padding: 40px;
+	border: 1px solid rgba(0,0,0,.1);
+	box-shadow: 0 5px 10px rgb(0,0,0,.2)
+}
+h2{
+	font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #071261;
+}
+ul {
+	font-family: 'Muli',Helvetica,Arial,Lucida,sans-serif;
+	list-style-type: none;
+	font-size: 20px;
+	padding: 0px;
+}
+li {
+	padding: 4px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	transition: .2s;
+	color: #D7D7D7;
+}

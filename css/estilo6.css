@@ -1,0 +1,151 @@
+*{
+	border-radius: 8px;
+	font-family: "Open Sans",sans-serif;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	background: url(../img/1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 1100px;
+}
+#navegacion{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	padding: 20px;
+	transition: 0.5s;
+	border-radius: 40px;
+	overflow: hidden;
+	box-shadow: 0 8px 15px rgba(0,0,0,.2)
+}
+#menu{
+	margin: 0;
+	padding: 0;
+	width: 0;
+	overflow: hidden;
+	display: flex;
+	transition: 0.5s;
+}
+#navegacion input:checked ~ #menu{
+	width: 700px;
+}
+#menu li{
+	list-style: none;
+	margin: 0 10px;
+}
+#menu li a {
+	text-decoration: none;
+	color: #666;
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: 0.5s;
+}
+#menu li a:hover{
+	color: #42a8f9;
+}
+#navegacion input{
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	opacity: 0;
+}
+#navegacion span{
+	position: absolute;
+	left: 26px;
+	width: 32px;
+	height: 4px;
+	background: #666;
+	pointer-events: none;
+	transition: 0.5s;
+}
+#navegacion input:checked ~ span{
+	background: #42a8f9;
+}
+#navegacion span:nth-child(2){
+	transform: translateY(-8px);
+}
+#navegacion input:checked ~ span:nth-child(2){
+	transform: translateY(0) rotate(45deg);
+}
+#navegacion span:nth-child(3){
+	transform: translateY(8px);
+}
+#navegacion input:checked ~ span:nth-child(3){
+	transform: translateY(0) rotate(-45deg);
+}
+/*Formulario*/
+#caja{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	background: white;
+	padding: 40px;
+	border: 1px solid rgba(0,0,0,.1);
+	box-shadow: 0 5px 10px rgb(0,0,0,.2)
+
+}
+#caja h2{
+	margin: 0 0 40px;
+	padding: 0;
+	color: #071261;
+	text-transform: uppercase;
+}
+#caja input{
+	padding: 10px 0;
+	margin-bottom: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #999;
+}
+#caja input[type="submit"]{
+	border-bottom: none;
+	width: 50;
+	cursor: pointer;
+	background: #071261;
+	color: white;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+#caja input[type="submit"]:hover{
+	background: #040B3D;
+}
+#caja form div {
+	position: relative;
+}
+#caja form div label {
+	position: absolute;
+	color: #999;
+	top: 10px;
+	left: 0;
+	pointer-events: none;
+	transition: .5s;
+}
+#caja input:focus ~ label,
+#caja input:valid ~ label{
+	top: -12px;
+	left: 0;
+	color: #071261;
+	font-size: 12px;
+	font-weight: bold;
+}
+#caja input:focus,
+#caja input:valid{
+	border-bottom: 2px solid #071261;
+}
+#volver input {
+	margin-left: 25%;
+	width: 50%;
+
+} 
+#volver input:hover{
+	background: #040B3D;
+}
